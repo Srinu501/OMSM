@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+if (session.getAttribute("username")==null)
+	{
+		response.sendRedirect("index.html");
+	}
+
+<html>
+<head>
+<title>Pollena Minima | Blog</title>
+<meta charset="utf-8">
+<link href="css/style.css" rel="stylesheet" type="text/css">
+<!--[if IE 6]><link href="css/ie6.css" rel="stylesheet" type="text/css"><![endif]-->
+<!--[if IE 7]><link href="css/ie7.css" rel="stylesheet" type="text/css"><![endif]-->
+</head>
+<body>
+<div id="background">
+  <div id="page">
+    <div class="header">
+      <div class="footer">
+        <div class="body">
+          <div id="sidebar"> <a href="#"><img id="logo" src="images/logo.gif" with="154" height="74" alt=""></a>
+            <ul class="navigation">
+              <li><a href="index.html">HOME</a></li>
+              <li><a href="login.html">LOGIN</a></li>
+              <li class="active"><a href="Registration.html">REGISTRATION</a></li>
+              <li class="last"><a href="contact.html">CONTACT</a></li>
+            </ul>
+            <div class="connect"> <a href="#" class="facebook">&nbsp;</a> <a href="#" class="twitter">&nbsp;</a> <a href="#" class="vimeo">&nbsp;</a> </div>
+            <div class="footenote"> <span>&copy; Copyright &copy; 2011.</span> <span><a href="#">Domain Name</a> all rights reserved</span> </div>
+          </div>
+          <div id="content">
+            <div class="content">
+              <form action="reg" method="get">
+		<div id="reg1_div">
+			<center>
+				<table cellspacing="4">
+					<tr>
+						<th>UserRegistration</th>
+					</tr>
+					<tr>
+						<td>UserName:</td>
+						<td><input type="text" name="username" required></td>
+					</tr>
+					<tr>
+						<td>NewPassword:</td>
+						<td><input type="password" name="newpassword" required></td>
+					</tr>
+					<tr>
+						<td>Reenterpassword</td>
+						<td><input type="password" name="reenterpassword" required></td>
+					</tr>
+					<tr>
+						<td>UserType:</td>
+						<td><select name="usertype">
+								<option value="admin">Admin</option>
+								<option value="user">User</option>
+						</select></td>
+				
+					<tr>
+						<td>Email:</td>
+						<td><input type="text" name="email" required></td>
+					</tr>
+					<tr>
+						<td>ContactNumber:</td>
+						<td><input type="text" name="contactnumber" required></td>
+					</tr>
+					<tr>
+						<td>Address:</td>
+						<td><input type="text" name="address" required></td>
+					</tr>
+
+					<tr><td><input type="button" value="Cancel"></td>
+					<td><input type="submit" value="Submit"></td>
+					</tr>
+				</table>
+			</center>
+		</div>
+		
+	</form>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="shadow"> </div>
+  </div>
+</div>
+</body>
+</html>

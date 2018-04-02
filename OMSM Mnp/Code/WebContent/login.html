@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>  
+function validateform(){  
+var name=document.myform.uname.value;  
+var password=document.myform.pwd.value;  
+  
+if (name==null || name==""){  
+  alert("Name can't be blank");  
+  return false;  
+}else if(password==null|| password==""){  
+  alert("Password must be filled");  
+  return false;  
+  }  
+}  
+</script> 
+<title>ONLINE MEDICAL STORE</title>
+<meta charset="utf-8">
+<link href="css/style.css" rel="stylesheet" type="text/css">
+<!--[if IE 6]><link href="css/ie6.css" rel="stylesheet" type="text/css"><![endif]-->
+<!--[if IE 7]><link href="css/ie7.css" rel="stylesheet" type="text/css"><![endif]-->
+</head>
+<body>
+<div id="background">
+  <div id="page">
+    <div class="header">
+      <div class="footer">
+        <div class="body">
+          <div id="sidebar"> <a href="#"><img id="logo" src="images/logo.gif" with="154" height="74" alt=""></a>
+            <ul class="navigation">
+              <li><a href="index.html">HOME</a></li>
+              <li class="active"><a href="login.html">LOGIN</a></li>
+              <!-- <li><a href="Registration.html">REGISTRATION</a></li> -->
+              <li class="last"><a href="contact.html">CONTACT</a></li>
+            </ul>
+            
+          </div>
+          <div id="content">
+            <div class="content">
+              <div id="logbg_div">
+	<img alt="" src="" height="100%"width="100%">
+	</div>
+
+	
+	<form action="login1.jsp" method="get" name="myform" onsubmit="return validateform()">
+	<h1></h1>
+		<div id="reg_div">
+			<center>
+				<table cellpadding="2" cellspacing="2">
+					<tr>
+						<th>Login</th>
+					</tr>
+					<tr>
+						<td>Username</td>
+						<td><input type="text" name="uname"></td>
+					</tr>
+					<tr>
+						<td>Password</td>
+						<td><input type="password" name="pwd"></td>
+					</tr>
+					<tr>
+											
+					
+					<tr>
+						<td><input type="button" value="reset"></td>
+						<td><input type="submit" value="login"></td>
+					</tr>
+				</table>
+				
+			</center>
+			
+		</div>
+	</form>
+	
+
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <span><span>
+    <div class="shadow"> </div>
+    </span></span></div>
+</div>
+</body>
+</html>
